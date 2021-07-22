@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+@font-face {
+	font-family:  "Cormorant";
+	src:  url(../fonts/CormorantUnicase-Regular.ttf) format("truetype");
+	font-stretch: wider;
+}
+@font-face {
+	font-family:  "Cormorant";
+	src:  url(../fonts/CormorantUnicase-Regular.ttf) format("truetype");
+	font-stretch: wider;
+}
+
+* {
+
+}
+
+body {
+	margin: 0px;
+	padding: 10px;
+	background: url(../images/header-section.jpg) no-repeat fixed;
+	background-size: cover;
+	background-position: center;
+	color:  #EEE;
+}
+
+
+/*** Header ***/
+
+header {
+	margin: 0px;
+	padding: 150px 30px 30px 30px; 
+	padding
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:  space-around;
+	
+}
+
+.logo {
+	height: 250px;
+	width: 250px;
+	
+}
+
+.titlex {
+	font-size: 50px;
+	font-family: Cormorant;
+	font-weight: 500;
+	text-align: center;
+
+}
+
+/*** Page ***/
+
+.content {
+	font-size: 25px;
+	background-color: #F25A29AA;
+	
+}
+
+/*** Bandeau titre ***/
+
+.bandeau-titre {
+	margin-top: 0px;
+	padding-bottom: 30px;
+	display:  flex;
+	flex-flow:  row;
+	justify-content: space-evenly;
+}
+
+
+/*tiles*/
+.tile1 {
+	background: url(../images/1.jpg);
+}
+
+.tile2 {
+	background: url(../images/2.jpg);
+}
+.tile3 {
+	background: url(../images/3.jpg);
+}
+
+.tiles {
+	padding: 5px;
+	width: 33vw;
+	min-width: 150px;
+	height: 20vh;
+	min-height: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+/*titles*/
+.titles {
+	font-family: "Lobster Two", cursive;
+	font-size: 40px;
+	text-align: center;
+	transition: 0.25s all;
+
+
+}
+
+.opening-hours {
+	font-size: 25px;
+	margin: 10px;
+}
+
+.word {
+
+}
+
+.introduction {
+
+}
+
+
+
+/*** Menu ***/
+
+.menu {
+	padding: 10px 30px 30px 50px;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+	
+}
+
+
+.logo-cocktails {
+	margin: 5px 25px 5px 5px ;
+	padding: 0;
+	
+	height: 50px;
+	width: 50px;
+	order:  -1;
+}
+
+.cocktail {
+	transition-delay: 0.28s;
+	margin: 20px;
+	padding-top: 5px;
+	font-size: 40px;
+	font-family: "Cormorant", cursive;
+	
+	
+}
+
+.sunmoon {
+	background: url(../images/orange-banner.jpg);
+}
+
+.mentalux {
+	background: url(../images/mentalux-banner.jpg);
+}
+
+.cocowhip {
+	background: url(../images/coco-banner.jpg);
+}
+
+.citrinus {
+	background: url(../images/citrinus-banner.jpg);
+}
+
+.spicherry {
+	background: url(../images/cherry-banner.jpg);
+}
+
+.cocktail-card {
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: #666666AA;
+	margin: 10px;
+	
+	width: 28vw;
+	min-width: 350px;
+	
+	
+	
+	height: 230px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.2s all;
+
+}
+
+.overlay {
+	transition: 0.4s all;
+	transition-delay: 0s;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #373737AA;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+
+}
+
+.cocktail-card:hover .overlay{
+	transition-delay: 0.15s;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	
+}
+
+.cocktail-card:hover .cocktail{
+	
+	/*display: none;*/
+	color: #FFFFFF00;
+	transition-delay: 0s;
+}
+
+.description {
+	margin: 5px 10px;
+	font-family: "Lobster Two";
+	text-align: center;
+}
+
+.tiles:hover .opening-hours {
+	transition: 0.4s all;
+	font-size: 120%;
+	margin: 5px;
+}
+
+.tiles:hover .word {
+	transition: 0.4s all;
+	font-size: 220%;
+	margin: 0;
+}
+.tiles:hover .introduction {
+	transition: 0.4s all;
+	font-size: 220%;
+	margin: 0;
+}
+
+
+
+/** Pied de page **/
+footer {
+	padding: 10px 0px;
+}
+
